@@ -1,0 +1,13 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+	<bean class="com.saksham.autowiringxml.Autowiring1" name="address1">
+		<property name="street" value="Sect-15"></property>
+		<property name="city" value="Ghaziabad"></property>
+	</bean>
+	<bean class="com.saksham.autowiringxml.Autowiring1.Employee" name="employee1" autowire="byName"></bean>
+	
+</beans>
