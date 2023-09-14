@@ -1,0 +1,9 @@
+package com.ims.controlleradvice;
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+
+@ControllerAdvice
+public class StudentControllerAdvice {
+
+	
+}

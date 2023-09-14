@@ -1,0 +1,20 @@
+package Exception;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hello");
+		int i,j,k=0;
+		i=8;
+		j=0;
+		try {
+			k=i/j;
+			
+		}
+		catch(ArithmeticException e) {
+			System.out.println("Divided by zero");
+		}
+	}
+
+}

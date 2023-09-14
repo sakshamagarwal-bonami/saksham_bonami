@@ -1,0 +1,9 @@
+package com.project.solid.lsp.solution;
+
+public interface SocialMedia {
+
+    public   void chatWithFriend();
+
+    public   void sendPhotosAndVideos();
+
+}

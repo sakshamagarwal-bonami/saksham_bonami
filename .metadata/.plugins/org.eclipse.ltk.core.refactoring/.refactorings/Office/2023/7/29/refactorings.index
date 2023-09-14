@@ -1,0 +1,9 @@
+1689665090907	Move compilation unit
+1689666828461	Copy package
+1689666837628	Delete element
+1689675546384	Rename package 'com.example.controller'
+1689675580309	Rename package 'com.example.controllerAdvice'
+1689675597067	Rename package 'com.example.Entity'
+1689675606438	Rename package 'com.example.Exceptions'
+1689675613466	Rename package 'com.example.repository'
+1689675620741	Rename package 'com.example.service'

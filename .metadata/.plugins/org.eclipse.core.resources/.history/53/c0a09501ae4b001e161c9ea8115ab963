@@ -1,0 +1,33 @@
+package com.test;
+
+abstract class A{
+	Integer age;
+	String name;
+	abstract void func();
+	Integer func1(Integer n) {
+		return n;
+	}
+}
+class B extends A{
+
+	@Override
+	void func() {
+		// TODO Auto-generated method stub
+		System.out.println("func called");
+		
+	}
+	
+}
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		A obj=new A();
+		obj.age=10;
+		obj.name="Saksham Agarwal";
+		System.out.println(obj.age);
+		System.out.println(obj.name);
+	}
+
+}

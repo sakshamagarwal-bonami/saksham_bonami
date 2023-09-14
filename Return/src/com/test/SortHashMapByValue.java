@@ -1,0 +1,36 @@
+package com.test;
+import java.util.*;
+
+public class SortHashMapByValue {
+    public static void main(String[] args) {
+        // Create a sample HashMap with String keys and Integer values
+        HashMap<String, Integer> unsortedMap = new HashMap<>();
+        unsortedMap.put("one", 1);
+        unsortedMap.put("five", 5);
+        unsortedMap.put("three", 3);
+        unsortedMap.put("two", 2);
+        unsortedMap.put("four", 4);
+
+        // Convert the HashMap to a list of Map.Entry objects
+        List<Map.Entry<String, Integer>> entryList = new ArrayList<>(unsortedMap.entrySet());
+
+        // Use a custom Comparator to sort the list by values in ascending order
+        Collections.sort(entryList, new Comparator<Map.Entry<String, Integer>>() {
+            @Override
+            public int compare(Map.Entry<String, Integer> entry1, Map.Entry<String, Integer> entry2) {
+                return entry1.getValue().compareTo(entry2.getValue());
+            }
+        });
+
+        // Create a new LinkedHashMap to store the sorted- entries
+        LinkedHashMap<String, Integer> sortedMap = new LinkedHashMap<>();
+        for (Map.Entry<String, Integer> entry : entryList) {
+            sortedMap.put(entry.getKey(), entry.getValue());
+        }
+
+        // Print the sorted map
+        for (Map.Entry<String, Integer> entry : sortedMap.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+    }
+}

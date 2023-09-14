@@ -1,0 +1,19 @@
+package com.test;
+
+abstract class A{
+	Integer age;
+	String name;
+}
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		A obj=new A();
+		obj.age=10;
+		obj.name="Saksham Agarwal";
+		System.out.println(obj.age);
+		System.out.println(obj.name);
+	}
+
+}

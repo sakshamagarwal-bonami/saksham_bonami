@@ -1,0 +1,27 @@
+package Exception;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hello");
+		int i,j,k=0;
+		i=8;
+		j=0;
+		int[] a=new int[4];
+		try {
+			k=i/j;
+			for(int i=0;i<=4;i++) {
+				a[i]=i;
+			}
+			
+		}
+		catch(ArithmeticException e) {
+			System.out.println("Divided by zero");
+		}
+		catch(IndexOutOfBoundsException e) {
+			System.out.println("Index out of bound somewhere");
+		}
+	}
+
+}

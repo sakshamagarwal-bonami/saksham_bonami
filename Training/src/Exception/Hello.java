@@ -1,0 +1,41 @@
+package Exception;
+
+import java.util.Scanner;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hello");
+		int i,j,k=0;
+		i=8;
+		j=10;
+		k=1;
+		Scanner scn=new Scanner(System.in);
+		j=scn.nextInt();
+		int[] a=new int[4];
+		try {
+			k=i/j;
+			for(int c=0;c<=40;c++) {
+				a[c]=c;
+			}
+			for(int value:a) {
+				System.out.println(value);
+			}
+			
+		}
+		catch(ArithmeticException e ) {
+			System.out.println("Divided by zero"+e);
+		}
+		catch(IndexOutOfBoundsException e) {
+			System.out.println("Index out of bound somewhere");
+		}
+		
+		catch (Exception e) {
+			System.out.println("Unknown Eception");
+		}
+		System.out.println(k);
+		
+	}
+
+}
